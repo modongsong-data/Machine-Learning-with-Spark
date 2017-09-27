@@ -1,10 +1,16 @@
+import matplotlib
+from IPython import get_ipython
+from matplotlib.pyplot import hist
+from pyspark import SparkContext
 
+import numpy as np
 # coding: utf-8
 
 # In[1]:
 
-get_ipython().magic(u'pylab inline')
+sc = SparkContext("local[2]", "First Spark App")
 
+get_ipython().magic(u'pylab inline')
 
 # ## Exploring the User Dataset
 
